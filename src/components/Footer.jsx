@@ -1,4 +1,4 @@
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -12,42 +12,44 @@ export default function Footer() {
                 </div>
 
                 {/* Menü Alanı */}
-                <div className="grid grid-cols-1 gap-8 w-full">
+                <div className="grid grid-cols-1 gap-8 w-full ">
                     {/* Her başlık ayrı blok */}
                     <div>
                         <h3 className="font-semibold mb-2">Company Info</h3>
-                        <ul className="space-y-1 text-gray-400">
-                            <li>About Us</li>
-                            <li>Carrier</li>
-                            <li>We are hiring</li>
-                            <li>Blog</li>
+                        <ul className="space-y-1 text-gray-400 ">
+                            <li><a href="/about" className="hover:text-white transition text-textColorWhite">About Us</a></li>
+                            <li><a href="/careers" className="hover:text-white transition text-textColorWhite">Career</a></li>
+                            <li><a href="/hiring" className="hover:text-white transition text-textColorWhite">We are hiring</a></li>
+                            <li><a href="/blog" className="hover:text-white transition text-textColorWhite">Blog</a></li>
                         </ul>
                     </div>
+
                     <div>
                         <h3 className="font-semibold mb-2">Legal</h3>
                         <ul className="space-y-1 text-gray-400">
-                            <li>About Us</li>
-                            <li>Carrier</li>
-                            <li>We are hiring</li>
-                            <li>Blog</li>
+                            <li><a href="/terms" className="hover:text-white transition text-textColorWhite">Terms & Conditions</a></li>
+                            <li><a href="/privacy" className="hover:text-white transition text-textColorWhite">Privacy Policy</a></li>
+                            <li><a href="/cookies" className="hover:text-white transition text-textColorWhite">Cookie Policy</a></li>
+                            <li><a href="/disclaimer" className="hover:text-white transition text-textColorWhite">Disclaimer</a></li>
                         </ul>
                     </div>
+
                     <div>
                         <h3 className="font-semibold mb-2">Features</h3>
                         <ul className="space-y-1 text-gray-400">
-                            <li>Business Marketing</li>
-                            <li>User Analytic</li>
-                            <li>Live Chat</li>
-                            <li>Unlimited Support</li>
+                            <li><a href="/marketing" className="hover:text-white transition text-textColorWhite">Business Marketing</a></li>
+                            <li><a href="/analytics" className="hover:text-white transition text-textColorWhite">User Analytic</a></li>
+                            <li><a href="/chat" className="hover:text-white transition text-textColorWhite">Live Chat</a></li>
+                            <li><a href="/support" className="hover:text-white transition text-textColorWhite">Unlimited Support</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-semibold mb-2">Resources</h3>
                         <ul className="space-y-1 text-gray-400">
-                            <li>IOS & Android</li>
-                            <li>Watch a Demo</li>
-                            <li>Customers</li>
-                            <li>API</li>
+                            <li><a href="/support" className="hover:text-white transition text-textColorWhite">IOS & Android</a></li>
+                            <li><a href="/support" className="hover:text-white transition text-textColorWhite">Watch a Demo</a></li>
+                            <li><a href="/support" className="hover:text-white transition text-textColorWhite">Customers</a></li>
+                            <li><a href="/support" className="hover:text-white transition text-textColorWhite">API</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,11 +77,20 @@ export default function Footer() {
                         <br /> All Rights Reserved
                     </p>
                     <div className="flex justify-center space-x-4">
-                        <a href="#"><i className="fab fa-facebook text-textColorWhite hover:text-primary"></i></a>
-                        <a href="#"><i className="fab fa-instagram text-textColorWhite hover:text-primary"></i></a>
-                        <a href="#"><i className="fab fa-twitter text-textColorWhite hover:text-primary"></i></a>
-                        <a href="#"><i className="fab fa-youtube text-textColorWhite hover:text-primary"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                            <Facebook />
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                            <Instagram />
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                            <Youtube />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                            <Twitter />
+                        </a>
                     </div>
+
                 </div>
             </div>
         </footer>
