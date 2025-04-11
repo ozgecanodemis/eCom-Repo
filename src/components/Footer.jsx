@@ -2,7 +2,7 @@ import { Phone, MapPin, Mail, Facebook, Instagram, Youtube, Twitter } from "luci
 
 export default function Footer() {
     return (
-        <footer className="bg-[#252B42] text-textColorWhite px-6 py-16 text-sm font-montserrat text-center">
+        <footer className="bg-[#252B42] w-full text-textColorWhite px-6 py-16 text-sm font-montserrat text-center">
             <div className="max-w-2xl mx-auto flex flex-col items-center space-y-10">
                 {/* Başlık & Buton */}
                 <div>
