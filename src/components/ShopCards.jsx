@@ -20,11 +20,12 @@ const ShopCards = () => {
     ];
 
     return (
-        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-between">
+        <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-between pb-4">
             {promos.map((promo, index) => (
                 <div
                     key={index}
-                    className="bg-white rounded-lg p-4 shadow-md flex flex-col items-center text-center w-full lg:w-[32%]"
+                    className="bg-white rounded-sm p-4 shadow-md flex flex-col items-center text-center w-[80%] mx-auto lg:w-[32%]"
+
                 >
                     <p className="text-sm text-gray-500">{promo.titleTop}</p>
                     <h2 className="text-xl font-bold mt-1">{promo.titleMain}</h2>

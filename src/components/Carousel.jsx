@@ -13,7 +13,7 @@ const Carousel = () => {
                 className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
             >
                 <SwiperSlide>
-                    <button className="btn-primary mt-4">Contact Us</button>
+                    <button className="btn-primary mt-4">Start Now</button>
                     <img
                         src="/images/slide1.jpg"
                         alt="Slide 1"
