@@ -2,8 +2,8 @@ import { Phone, MapPin, Mail, Facebook, Instagram, Youtube, Twitter } from "luci
 
 export default function Footer() {
     return (
-        <footer className="bg-[#252B42] w-full text-textColorWhite px-6 py-16 text-sm font-montserrat text-center">
-            <div className="max-w-2xl mx-auto flex flex-col items-center space-y-10">
+        <footer className="flex flex-col lg:flex-row bg-[#252B42] w-full text-textColorWhite px-6 py-16 text-sm font-montserrat text-center ">
+            <div className=" mx-auto flex flex-col lg:flex-row items-center  gap-8">
                 {/* Başlık & Buton */}
                 <div>
                     <h2 className="font-bold text-lg">Consulting Agency For Your Business</h2>
@@ -12,10 +12,10 @@ export default function Footer() {
                 </div>
 
                 {/* Menü Alanı */}
-                <div className="grid grid-cols-1 gap-8 w-full ">
+                <div className=" gap-8 w-full flex flex-col lg:flex-row ">
                     {/* Her başlık ayrı blok */}
                     <div>
-                        <h3 className="font-semibold mb-2">Company Info</h3>
+                        <h3 className="font-semibold mb-2 font-bold ">Company Info</h3>
                         <ul className="space-y-1 text-gray-400 ">
                             <li><a href="/about" className="hover:text-white transition text-textColorWhite">About Us</a></li>
                             <li><a href="/careers" className="hover:text-white transition text-textColorWhite">Career</a></li>
@@ -25,7 +25,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-semibold mb-2">Legal</h3>
+                        <h3 className="font-semibold mb-2 font-bold">Legal</h3>
                         <ul className="space-y-1 text-gray-400">
                             <li><a href="/terms" className="hover:text-white transition text-textColorWhite">Terms & Conditions</a></li>
                             <li><a href="/privacy" className="hover:text-white transition text-textColorWhite">Privacy Policy</a></li>

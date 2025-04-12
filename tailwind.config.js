@@ -7,6 +7,10 @@ export default {
       primary: '#23A6F0',  // Özel renk
       secondary: '#23A6F0',  // Hover rengi veya ikinci renk
       textColorWhite: '#ffffff',
+      dotColorBlue: '#23A6F0',
+      dotColorGreen: '#23856D',
+      dotColorOrange: '#E77C40',
+      dotColorBlack: '#252B42',
       // Diğer renkler de burada tanımlanabilir
     },
   },
