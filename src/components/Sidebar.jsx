@@ -1,4 +1,4 @@
-const Sidebar = () => {
+const SideBar = () => {
     return (
         <div className="bg-yellow-400 p-4 border border-gray-800 rounded-lg shadow-md w-full sm:w-[300px]">
             <h2 className="text-sm font-bold text-white">FURNITURE</h2>
@@ -12,4 +12,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default SideBar;
