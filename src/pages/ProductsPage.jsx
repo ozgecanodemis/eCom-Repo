@@ -1,12 +1,12 @@
 // src/pages/ProductsPage.jsx
 
 import ProductSection from "../components/ProductSection";
-import SideBar from "../components/SideBar";
+import Sidebar from "../components/SideBar";
 
 const ProductsPage = () => {
     return (
         <div className="flex flex-col lg:flex-row gap-4 p-4 max-w-screen-xl mx-auto">
-            <SideBar />
+            <Sidebar />
             <ProductSection />
         </div>
     );
