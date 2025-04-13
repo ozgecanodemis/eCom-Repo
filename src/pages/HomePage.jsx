@@ -4,7 +4,7 @@ import MostPopular from "../components/MostPopular";
 import CategoryPanel from "../components/CategoryPanel";
 import Blog from "../components/Blog";
 import Brands from "../components/brands";
-import BestSellerProducts from "../components/BestsellerProducts";
+import BestSelProducts from "../components/BestSelProducts";
 
 
 
@@ -14,12 +14,12 @@ const HomePage = () => {
             <Carousel />
             <ShopCards />
             <div className="flex flex-col lg:flex-row gap-4 p-4 max-w-screen-xl mx-auto">
-                <BestSellerProducts />
+                <BestSelProducts />
                 <CategoryPanel />
             </div>
             <MostPopular />
             <div className="flex flex-col lg:flex-row gap-4 p-4 max-w-screen-xl mx-auto">
-                <BestSellerProducts />
+                <BestSelProducts />
                 <CategoryPanel />
             </div>
             <MostPopular />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProductCard from "./ProductCard";
 
-const BestSellerProducts = () => {
+const BestSelProducts = () => {
     const [activeTab, setActiveTab] = useState("Men");
     const tabs = ["Men", "Women", "Accessories"];
 
@@ -31,4 +31,4 @@ const BestSellerProducts = () => {
     );
 };
 
-export default BestSellerProducts;
+export default BestSelProducts;
