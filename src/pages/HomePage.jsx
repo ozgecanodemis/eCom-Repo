@@ -7,6 +7,7 @@ import Brands from "../components/brands";
 import BestSellerProducts from "../components/BestsellerProducts";
 
 
+
 const HomePage = () => {
     return (
         <>
