@@ -20,7 +20,7 @@ export default function Header() {
                     <nav className="hidden md:flex items-center space-x-8 ">
                         <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
                         <Link to="/product" className="text-gray-600 hover:text-gray-900">Product</Link>
-                        <Link to="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link>
+                        <Link to="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
                         <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
                     </nav>
 
@@ -50,7 +50,7 @@ export default function Header() {
                     <nav className="mt-8 flex flex-col items-center space-y-8 md:hidden">
                         <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
                         <Link to="/product" className="text-gray-600 hover:text-gray-900">Product</Link>
-                        <Link to="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link>
+                        <Link to="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
                         <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
                     </nav>
                 )}
