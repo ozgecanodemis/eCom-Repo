@@ -6,7 +6,7 @@ const BestSelProducts = () => {
     const tabs = ["Men", "Women", "Accessories"];
 
     return (
-        <div className="p-4 border border-gray-300 rounded-lg w-full">
+        <div className="p-4 border border-gray-300 rounded-lg w-[1440px]">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                 <h2 className="font-bold text-sm">BESTSELLER PRODUCTS</h2>
                 <div className="flex gap-4 text-sm">
