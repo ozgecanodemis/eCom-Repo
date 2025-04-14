@@ -6,14 +6,17 @@ const BestSelProducts = () => {
     const tabs = ["Men", "Women", "Accessories"];
 
     return (
-        <div className="p-4 border border-gray-300 rounded-lg w-[1440px]">
-            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
-                <h2 className="font-bold text-sm">BESTSELLER PRODUCTS</h2>
+        <div className=" flex flex-col  items-center p-4  rounded-lg w-full max-w-[1440px] mx-auto">
+            <div className="flex flex-col gap-6 sm:flex-row items-center justify-between sm:items-center gap-2">
+                <h2 className="font-bold text-lg text-black">BESTSELLER PRODUCTS</h2>
                 <div className="flex gap-4 text-sm">
                     {tabs.map(tab => (
                         <button
                             key={tab}
-                            className={`${activeTab === tab ? "text-black font-bold" : "text-gray-400"}`}
+                            className={`${activeTab === tab
+                                ? "text-secondTextColor font-bold"
+                                : "text-secondTextColor"
+                                }`}
                             onClick={() => setActiveTab(tab)}
                         >
                             {tab}

@@ -20,26 +20,32 @@ const ShopCards = () => {
     ];
 
     return (
-        <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-between items-center pb-4">
+        <div className="flex flex-col gap-[10px]  sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:justify-between bg-[#FAFAFA] items-center pb-4">
             {promos.map((promo, index) => (
                 <div
                     key={index}
-                    className="bg-white rounded-sm p-4 shadow-md flex flex-col items-center text-center w-[80%]  lg:w-[32%] mt-4"
+                    className="bg-white rounded-sm border-[#ECECEC] p-4 shadow-md flex flex-col items-center text-center w-[332px] h-[232px] mt-4"
 
                 >
-                    <p className="text-sm text-gray-500">{promo.titleTop}</p>
-                    <h2 className="text-xl font-bold mt-1">{promo.titleMain}</h2>
-                    <img
-                        src={promo.image}
-                        alt="Promo"
-                        className="w-28 h-28 object-contain mt-4"
-                    />
-                    <a
-                        href="#"
-                        className="mt-4 text-sm font-semibold text-blue-600 hover:underline"
+                    <div
+                        className="relative w-full h-48 bg-cover bg-center flex flex-col justify-center items-start gap-2 p-4"
+                        style={{ backgroundImage: `url(${promo.image})` }}
                     >
-                        Explore Items
-                    </a>
+                        <p className="text-[14px] font-[700] text-secondTextColor bg-white/80 px-2 rounded">
+                            {promo.titleTop}
+                        </p>
+                        <h2 className="font-bold text-[24px] w-[94px] text-black bg-white/80 px-2 rounded text-left">
+                            {promo.titleMain}
+                        </h2>
+
+                        <a
+                            href="#"
+                            className="text-sm font-[700] text-dotColorBlack hover:underline bg-white/80 px-2 rounded"
+                        >
+                            Explore Items
+                        </a>
+                    </div>
+
                 </div>
             ))}
         </div>
