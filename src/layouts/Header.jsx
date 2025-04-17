@@ -8,9 +8,9 @@ export default function Header() {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <header className="w-full bg-white shadow-sm">
-            <div className="container mx-auto px-4 py-4">
-                <div className="flex items-center justify-center  space-x-16 md:flex-row md:justify-between md:space-y-0">
+        <header className="w-[full] bg-white shadow-sm">
+            <div className="container mx-auto px-4 py-4 ">
+                <div className="flex items-center justify-center   space-x-16 md:flex-row md:justify-between md:space-y-0">
                     {/* Logo */}
                     <Link to="/" className="text-xl font-bold text-dotColorBlack">
                         Bandage
@@ -20,7 +20,7 @@ export default function Header() {
                     <nav className="hidden md:flex items-center space-x-8 ">
                         <Link to="/" className="text-secondTextColor hover:text-gray-900">Home</Link>
                         <Link to="/product" className="text-secondTextColor hover:text-gray-900">Product</Link>
-                        <Link to="/pricing" className="text-secondTextColor hover:text-gray-900">Pricing</Link>
+                        <Link to="/shop" className="text-secondTextColor hover:text-gray-900">Shop</Link>
                         <Link to="/contact" className="text-secondTextColor hover:text-gray-900">Contact</Link>
                     </nav>
 

@@ -56,33 +56,36 @@ function Carousel({ startIndex = 0 }) {
 
     const slides = items.map((item, index) => {
         return (
-            <div
-                key={item.key}
-                className={`absolute inset-0 transition-opacity duration-1000 ${activeIndex === index ? 'opacity-100' : 'opacity-0'}`}
-                onTransitionEnd={() => setAnimating(false)}
-            >
-                <img
-                    src={item.src}
-                    alt={item.altText}
-                    className="w-full h-screen lg:h-[90vh] object-cover object-center bg-center"
-                />
-                {/* Info section in the center of the slide */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 px-4">
-                    <h1 className="text-textColorWhite font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 max-w-[75%] sm:max-w-[658px]">
-                        GROCERIES DELIVERY
-                    </h1>
-                    <h4 className="text-textColorWhite font-montserrat text-base sm:text-lg leading-6 sm:leading-[30px] tracking-[0.2px] max-w-[80%] sm:max-w-[536px] mb-6">
-                        We know how large objects will act, but things on a small scale just do not act that way.
-                    </h4>
 
-                    {item.buttonText && (
-                        <Link
-                            to="/shop"
-                            className="custom-button px-6 py-2 mt-2 bg-dotColorBlue text-textColorWhite rounded-md text-lg"
-                        >
-                            {item.buttonText}
-                        </Link>
-                    )}
+            <div className='w-full'>
+                <div
+                    key={item.key}
+                    className={`absolute inset-0 transition-opacity duration-1000 ${activeIndex === index ? 'opacity-100' : 'opacity-0'}`}
+                    onTransitionEnd={() => setAnimating(false)}
+                >
+                    <img
+                        src={item.src}
+                        alt={item.altText}
+                        className="w-full h-screen lg:h-[90vh] object-cover object-center bg-center"
+                    />
+                    {/* Info section in the center of the slide */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 px-4">
+                        <h1 className="text-textColorWhite font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 max-w-[75%] sm:max-w-[658px]">
+                            GROCERIES DELIVERY
+                        </h1>
+                        <h4 className="text-textColorWhite font-montserrat text-base sm:text-lg leading-6 sm:leading-[30px] tracking-[0.2px] max-w-[80%] sm:max-w-[536px] mb-6">
+                            We know how large objects will act, but things on a small scale just do not act that way.
+                        </h4>
+
+                        {item.buttonText && (
+                            <Link
+                                to="/shop"
+                                className="custom-button px-6 py-2 mt-2 bg-dotColorBlue text-textColorWhite rounded-md text-lg"
+                            >
+                                {item.buttonText}
+                            </Link>
+                        )}
+                    </div>
                 </div>
             </div>
         );

@@ -3,9 +3,9 @@ import categorypanel from '../assets/categorypanel.jpeg';
 const CategoryPanel = () => {
     return (
 
-        <div className='flex justify-center p-4'>
+        <div className='flex justify-center '>
             <div
-                className="w-[389px] sm:h-[664px] md:h-[796px]  bg-cover bg-center "
+                className="w-full h-[796px] bg-cover bg-center "
                 style={{ backgroundImage: `url(${categorypanel})` }}
             >
                 <div className="bg-black/40 p-4 rounded-lg m-4 flex flex-col items-start">
