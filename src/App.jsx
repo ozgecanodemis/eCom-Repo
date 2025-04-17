@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ShopPage from './pages/ShopPage'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <MainLayout>
           <Switch>
             <Route exact path="/" component={HomePage} />
-
+            <Route exact path="/shop" component={ShopPage} />
           </Switch>
         </MainLayout>
       </Router>

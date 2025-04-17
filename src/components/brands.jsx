@@ -9,7 +9,7 @@ import dw6 from '../assets/dw-6.png';
 
 const Brands = () => {
     return (
-        <div className="flex flex-col items-center gap-6 bg-gray-200 py-12 w-full lg:px-12 md:flex-row md:flex-wrap md:justify-between">
+        <div className="flex flex-col items-center gap-6 bg-gray-200 py-12 w-full lg:px-12 md:flex-row md:justify-between">
             {[dw1, dw2, dw3, dw4, dw5, dw6].map((src, index) => (
                 <img
                     key={index}
